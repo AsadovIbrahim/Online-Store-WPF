@@ -1,0 +1,151 @@
+﻿<Window x:Class="OnlineStore_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OnlineStore_WPF"
+        mc:Ignorable="d"
+        Title="Store" Height="650" Width="700" WindowStyle="None" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Border Style="{StaticResource Body}" Background="#45414B">
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.2*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0">
+                <Border Style="{StaticResource Left_Border}">
+                    <Grid Grid.Row="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="0.2*"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Button Style="{StaticResource Basket_Button}" Click="basketButton_Click">
+                            <Image Source="Images/basket.png"
+                               Width="30"/>
+                        </Button>
+                        <Grid Grid.Row="1">
+                            <Button Style="{StaticResource exit_Button}" Click="exitButton_Click">
+                                <Image Source="Images/exit.png" Width="30"/>
+                            </Button>
+                        </Grid>
+                    </Grid>
+
+                </Border>
+            </Grid>
+
+            <Grid Grid.Column="1">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.45*"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Style="{StaticResource Header_Text}" Text="Online Store"/>
+                <Button HorizontalAlignment="Right" Width="30" BorderBrush="Transparent" Background="Transparent" VerticalAlignment="Top" Margin="20">
+                    <Image Source="Images/searchbtn (2).png"/>
+                </Button>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/> 
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="5*"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Border Style="{StaticResource imageBorder}"/>
+                        <Image Source="Images/cola.png" Width="30" Height="100" Grid.Row="0" Grid.Column="1"/>
+                        <Grid Margin="0,183,0,0" Grid.RowSpan="2">
+                            <Border Style="{StaticResource productsPriceBorder}" Grid.Column="0" Margin="30,-10,30,27"/>
+                            <TextBlock Text="Cola: 2,99$" TextAlignment="Center" HorizontalAlignment="Center" Padding="10" FontSize="18" Foreground="#fff" FontFamily="Garamond"/>
+                        </Grid>
+                    </Grid>
+
+                    <Grid Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="5*"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Border Style="{StaticResource imageBorder}"/>
+                        <Image Source="Images/Lays.png" Width="70" Grid.Row="0" Grid.Column="1"/>
+                        <Grid Margin="0,183,0,0" Grid.RowSpan="2">
+                            <Border Style="{StaticResource productsPriceBorder}" Grid.Column="0" Margin="30,-10,30,27"/>
+                            <TextBlock Text="Lays: 0,70$" TextAlignment="Center" HorizontalAlignment="Center" Padding="10" FontSize="18" Foreground="#fff" FontFamily="Garamond"/>
+                        </Grid>
+                    </Grid>
+                    <Grid Grid.Column="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="5*"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <Border Style="{StaticResource imageBorder}"/>
+                        <Image Source="Images/Potato.png" Width="70" Grid.Row="0" Grid.Column="1"/>
+                        <Grid Margin="0,183,0,0" Grid.RowSpan="2">
+                            <Border Style="{StaticResource productsPriceBorder}" Grid.Column="0" Margin="30,-10,30,27"/>
+                            <TextBlock Text="Potato: 1,20$" TextAlignment="Center" HorizontalAlignment="Center" Padding="10" FontSize="18" Foreground="#fff" FontFamily="Garamond"/>
+                        </Grid>
+                    </Grid>
+                    
+                    <Button Style="{StaticResource allProducts_Button}" Grid.Column="0" />
+                    <Button Style="{StaticResource allProducts_Button}" Grid.Column="1"/>
+                    <Button Style="{StaticResource allProducts_Button}" Grid.Column="2"/>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="5*"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Border Style="{StaticResource imageBorder}"/>
+                        <Image Source="Images/Snickers.png" Width="100" Grid.Row="0" Grid.Column="1"/>
+                        <Grid Margin="0,183,0,0" Grid.RowSpan="2">
+                            <Border Style="{StaticResource productsPriceBorder}" Grid.Column="0" Margin="30,-10,30,27"/>
+                            <TextBlock Text="Snickers: 0,90$" TextAlignment="Center" HorizontalAlignment="Center" Padding="10" FontSize="18" Foreground="#fff" FontFamily="Garamond"/>
+                        </Grid>
+                    </Grid>
+
+                    <Grid Grid.Column="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="5*"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Border Style="{StaticResource imageBorder}"/>
+                        <Image Source="Images/Pepsi.png" Width="100" Grid.Row="0" Grid.Column="1"/>
+                        <Grid Margin="0,183,0,0" Grid.RowSpan="2">
+                            <Border Style="{StaticResource productsPriceBorder}" Grid.Column="0" Margin="30,-10,30,27"/>
+                            <TextBlock Text="Pepsi: 0,85$" TextAlignment="Center" HorizontalAlignment="Center" Padding="10" FontSize="18" Foreground="#fff" FontFamily="Garamond"/>
+                        </Grid>
+                    </Grid>
+
+                    <Grid Grid.Column="2">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="5*"/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Border Style="{StaticResource imageBorder}"/>
+                        <Image Source="Images/Vape.png" Width="90" Grid.Row="0" Grid.Column="1"/>
+                        <Grid Margin="0,183,0,0" Grid.RowSpan="2">
+                            <Border Style="{StaticResource productsPriceBorder}" Grid.Column="0" Margin="30,-10,30,27"/>
+                            <TextBlock Text="Vape: 12,31$" TextAlignment="Center" HorizontalAlignment="Center" Padding="10" FontSize="18" Foreground="#fff" FontFamily="Garamond"/>
+                        </Grid>
+                    </Grid>
+                    <Button Style="{StaticResource allProducts_Button}" Grid.Column="0"/>
+                    <Button Style="{StaticResource allProducts_Button}" Grid.Column="1"/>
+                    <Button Style="{StaticResource allProducts_Button}" Grid.Column="2"/>
+
+                </Grid>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>
