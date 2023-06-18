@@ -43,6 +43,11 @@ namespace OnlineStore_WPF
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            
+        }
+
+        private void searchButton_Click(object sender, RoutedEventArgs e)
+        {
            
         }
 
