@@ -48,8 +48,14 @@ namespace OnlineStore_WPF
 
         private void searchButton_Click(object sender, RoutedEventArgs e)
         {
-           
+            searchTextBox.Visibility = Visibility.Visible;
+            searchTextBox.Text = "";
+
+            // TextBox'a odaklan
+            searchTextBox.Focus();
+
         }
+
 
 
 

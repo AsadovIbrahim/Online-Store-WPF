@@ -93,9 +93,9 @@
                         </Grid>
                     </Grid>
 
-                    <!--<Button Style="{StaticResource allProducts_Button}" Grid.Column="0" Click="Button_Click"/>
+                    <Button Style="{StaticResource allProducts_Button}" Grid.Column="0" Click="Button_Click"/>
                     <Button Style="{StaticResource allProducts_Button}" Grid.Column="1" Click="Button_Click"/>
-                    <Button Style="{StaticResource allProducts_Button}" Grid.Column="2" Click="Button_Click"/>-->
+                    <Button Style="{StaticResource allProducts_Button}" Grid.Column="2" Click="Button_Click"/>
                 </Grid>
                 <Grid Grid.Row="2">
                     <Grid.ColumnDefinitions>
