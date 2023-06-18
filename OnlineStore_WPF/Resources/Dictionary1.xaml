@@ -5,15 +5,14 @@
         <Setter Property="CornerRadius" Value="30"/>
         <Setter Property="Margin" Value="10"/>
         <Setter Property="BorderThickness" Value="2"/>
-        <Setter Property="BorderBrush" Value="gray"/>
+        <Setter Property="BorderBrush" Value="Gray"/>
     </Style>
 
     <Style x:Key="Left_Border" TargetType="Border">
         <Setter Property="CornerRadius" Value="30"/>
-        <Setter Property="Background" Value="#fff"/>
+        <Setter Property="Background" Value="#FFF"/>
     </Style>
 
-   
     <Style x:Key="Basket_Button" TargetType="Button">
         <Setter Property="Template">
             <Setter.Value>
@@ -23,9 +22,9 @@
                         BorderThickness="3"
                         Background="#0D8E2E"
                         CornerRadius="50">
-                        
+
                         <ContentPresenter HorizontalAlignment="Center"
-                                      VerticalAlignment="Center"/>
+                                          VerticalAlignment="Center"/>
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
@@ -39,7 +38,6 @@
         <Setter Property="Height" Value="50"/>
     </Style>
 
-
     <Style x:Key="exit_Button" TargetType="Button">
         <Setter Property="Template">
             <Setter.Value>
@@ -47,10 +45,10 @@
                     <Border x:Name="border"
                         BorderBrush="{TemplateBinding BorderBrush}"
                         BorderThickness="3"
-                            CornerRadius="50">
+                        CornerRadius="50">
 
                         <ContentPresenter HorizontalAlignment="Center"
-                                      VerticalAlignment="Center"/>
+                                          VerticalAlignment="Center"/>
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
@@ -67,7 +65,7 @@
     </Style>
 
     <Style x:Key="Header_Text" TargetType="TextBlock">
-        <Setter Property="Foreground" Value="#fff"/>
+        <Setter Property="Foreground" Value="#FFF"/>
         <Setter Property="FontFamily" Value="Garamond"/>
         <Setter Property="FontSize" Value="30"/>
         <Setter Property="TextAlignment" Value="Center"/>
@@ -82,28 +80,28 @@
                             BorderBrush="Gray"
                             CornerRadius="20"
                             BorderThickness="2"
-                            >
+                            Background="Transparent">
                     </Border>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
-        <Setter Property="Width" Value="auto"/>
+        <Setter Property="Width" Value="Auto"/>
         <Setter Property="Margin" Value="30"/>
-        <Setter Property="Height" Value="auto"/>
+        <Setter Property="Height" Value="Auto"/>
     </Style>
 
     <Style x:Key="imageBorder" TargetType="Border">
-        <Setter Property="Background" Value="#fff"/>
+        <Setter Property="Background" Value="#FFF"/>
         <Setter Property="CornerRadius" Value="20,20,0,0"/>
-        <Setter Property="Width" Value="auto"/>
-        <Setter Property="Height" Value="auto"/>
+        <Setter Property="Width" Value="Auto"/>
+        <Setter Property="Height" Value="Auto"/>
         <Setter Property="Margin" Value="30"/>
         <Setter Property="BorderThickness" Value="2"/>
     </Style>
 
     <Style x:Key="productsPriceBorder" TargetType="Border">
-        <Setter Property="Width" Value="auto"/>
-        <Setter Property="Height" Value="auto"/>
+        <Setter Property="Width" Value="Auto"/>
+        <Setter Property="Height" Value="Auto"/>
         <Setter Property="CornerRadius" Value="0,0,20,20"/>
         <Setter Property="Margin" Value="30"/>
         <Setter Property="BorderThickness" Value="2"/>

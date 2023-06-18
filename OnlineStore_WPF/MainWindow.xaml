@@ -57,6 +57,7 @@
                             <RowDefinition Height="5*"/>
                             <RowDefinition/>
                         </Grid.RowDefinitions>
+                        
                         <Border Style="{StaticResource imageBorder}"/>
                         <Image Source="Images/cola.png" Width="30" Height="100" Grid.Row="0" Grid.Column="1"/>
                         <Grid Margin="0,183,0,0" Grid.RowSpan="2">
@@ -91,9 +92,9 @@
                         </Grid>
                     </Grid>
                     
-                    <Button Style="{StaticResource allProducts_Button}" Grid.Column="0" />
-                    <Button Style="{StaticResource allProducts_Button}" Grid.Column="1"/>
-                    <Button Style="{StaticResource allProducts_Button}" Grid.Column="2"/>
+                    <Button Style="{StaticResource allProducts_Button}" Grid.Column="0" Click="Button_Click" />
+                    <Button Style="{StaticResource allProducts_Button}" Grid.Column="1" Click="Button_Click"/>
+                    <Button Style="{StaticResource allProducts_Button}" Grid.Column="2" Click="Button_Click"/>
                 </Grid>
                 <Grid Grid.Row="2">
                     <Grid.ColumnDefinitions>
