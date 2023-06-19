@@ -72,42 +72,43 @@
         <Setter Property="Padding" Value="20"/>
     </Style>
 
-    <Style x:Key="allProducts_Button" TargetType="Button">
+    <Style x:Key="allProducts_Button" TargetType="ListBox">
         <Setter Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="Button">
+                <ControlTemplate TargetType="ListBox">
                     <Border x:Name="allProducts_Border"
                             BorderBrush="Gray"
                             CornerRadius="20"
                             BorderThickness="2"
                             Background="Transparent">
                     </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="allProducts_Border" Property="Background" Value="LightBlue" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
         <Setter Property="Width" Value="Auto"/>
-        <Setter Property="Margin" Value="30"/>
         <Setter Property="Height" Value="Auto"/>
     </Style>
 
     <Style x:Key="imageBorder" TargetType="Border">
         <Setter Property="Background" Value="#FFF"/>
         <Setter Property="CornerRadius" Value="20,20,0,0"/>
-        <Setter Property="Width" Value="Auto"/>
-        <Setter Property="Height" Value="Auto"/>
-        <Setter Property="Margin" Value="30"/>
+        <Setter Property="Width" Value="150"/>
+        <Setter Property="Height" Value="190"/>
         <Setter Property="BorderThickness" Value="2"/>
     </Style>
 
     <Style x:Key="productsPriceBorder" TargetType="Border">
         <Setter Property="Width" Value="Auto"/>
+        <Setter Property="Padding" Value="20"/>
         <Setter Property="Height" Value="Auto"/>
         <Setter Property="CornerRadius" Value="0,0,20,20"/>
-        <Setter Property="Margin" Value="30"/>
         <Setter Property="BorderThickness" Value="2"/>
         <Setter Property="Background" Value="Orange"/>
     </Style>
-    
-    
 
 </ResourceDictionary>
