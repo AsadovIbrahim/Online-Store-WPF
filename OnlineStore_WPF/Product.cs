@@ -8,10 +8,12 @@ using System.Threading.Tasks;
 
 namespace OnlineStore_WPF
 {
+
     public class Product:INotifyPropertyChanged
     {
         private string name;
         private decimal price;
+        private string imagePath;
 
         public string Name
         {
@@ -29,6 +31,16 @@ namespace OnlineStore_WPF
             {
                 price= value;
                 OnPropertyChanged("Price");
+            }
+        }
+
+        public string ImagePath
+        {
+            get { return imagePath; }
+            set
+            {
+                imagePath = value;
+                OnPropertyChanged($"{nameof(ImagePath)}");
             }
         }
         public event PropertyChangedEventHandler PropertyChanged;

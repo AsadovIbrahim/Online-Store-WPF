@@ -30,7 +30,7 @@
                     </Grid>
                 </Border>
             </Grid>
-            <ListBox BorderBrush="Transparent" VerticalAlignment="Center" Grid.Column="1" Width="400" Background="Transparent" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListBox x:Name="itemListBox"  BorderBrush="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Width="400" Background="Transparent" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionChanged="itemListBox_SelectionChanged">
                 <ListBox.ItemsPanel>
                     <ItemsPanelTemplate>
                         <WrapPanel Orientation="Horizontal"/>
@@ -41,71 +41,71 @@
                         <Setter Property="Width" Value="auto"/>
                     </Style>
                 </ListBox.ItemContainerStyle>
-                <ListBoxItem>
+                <ListBoxItem x:Name="item1">
                     <Grid>
                         <Border Style="{StaticResource imageBorder}"/>
 
                         <Image Source="Images/cola.png" Width="100" Height="100" Grid.Row="0" Grid.Column="1"/>
                         <Grid Margin="0,183,0,0" Grid.RowSpan="2">
                             <Border Style="{StaticResource productsPriceBorder}" Grid.Column="0"/>
-                            <TextBlock Text="Cola: 2,99$" TextAlignment="Center" VerticalAlignment="Center"  FontSize="18" Foreground="#fff" FontFamily="Garamond"/>
+                            <TextBlock x:Name="itemName"  TextAlignment="Center" VerticalAlignment="Center"  FontSize="18" Foreground="#fff" FontFamily="Garamond"/>
                         </Grid>
                     </Grid>
                 </ListBoxItem>
 
-                <ListBoxItem>
+                <ListBoxItem x:Name="item2">
                     <Grid>
 
                         <Border Style="{StaticResource imageBorder}"/>
                         <Image Source="Images/Potato.png" Width="100" Grid.Row="0" Grid.Column="1"/>
                         <Grid Margin="0,183,0,0" Grid.RowSpan="2">
                             <Border Style="{StaticResource productsPriceBorder}" Grid.Column="0"/>
-                            <TextBlock Text="Potato: 1,20$" TextAlignment="Center" VerticalAlignment="Center"  FontSize="18" Foreground="#fff" FontFamily="Garamond"/>
+                            <TextBlock TextAlignment="Center" VerticalAlignment="Center"  FontSize="18" Foreground="#fff" FontFamily="Garamond"/>
                         </Grid>
                     </Grid>
                 </ListBoxItem>
-                <ListBoxItem>
+                <ListBoxItem x:Name="item3">
                     <Grid>
 
                         <Border Style="{StaticResource imageBorder}"/>
                         <Image Source="Images/Snickers.png" Width="100" Grid.Row="0" Grid.Column="1"/>
                         <Grid Margin="0,183,0,0" Grid.RowSpan="2">
                             <Border Style="{StaticResource productsPriceBorder}" Grid.Column="0"/>
-                            <TextBlock Text="Snickers: 0,90$" TextAlignment="Center" VerticalAlignment="Center"  FontSize="18" Foreground="#fff" FontFamily="Garamond"/>
+                            <TextBlock  TextAlignment="Center" VerticalAlignment="Center"  FontSize="18" Foreground="#fff" FontFamily="Garamond"/>
                         </Grid>
                     </Grid>
                 </ListBoxItem>
-                <ListBoxItem>
+                <ListBoxItem x:Name="item4">
                     <Grid>
 
                         <Border Style="{StaticResource imageBorder}"/>
                         <Image Source="Images/Pepsi.png" Width="100" Grid.Row="0" Grid.Column="1"/>
                         <Grid Margin="0,183,0,0" Grid.RowSpan="2">
                             <Border Style="{StaticResource productsPriceBorder}" Grid.Column="0"/>
-                            <TextBlock Text="Pepsi: 0,85$" TextAlignment="Center" VerticalAlignment="Center"  FontSize="18" Foreground="#fff" FontFamily="Garamond"/>
+                            <TextBlock  TextAlignment="Center" VerticalAlignment="Center"  FontSize="18" Foreground="#fff" FontFamily="Garamond"/>
                         </Grid>
                     </Grid>
                 </ListBoxItem>
-                <ListBoxItem>
+                <ListBoxItem x:Name="item5">
                     <Grid>
 
                         <Border Style="{StaticResource imageBorder}"/>
                         <Image Source="Images/Vape.png" Width="100" Grid.Row="0" Grid.Column="1"/>
                         <Grid Margin="0,183,0,0" Grid.RowSpan="2">
                             <Border Style="{StaticResource productsPriceBorder}" Grid.Column="0"/>
-                            <TextBlock Text="Vape: 12,31$" TextAlignment="Center" VerticalAlignment="Center"  FontSize="18" Foreground="#fff" FontFamily="Garamond"/>
+                            <TextBlock  TextAlignment="Center" VerticalAlignment="Center"  FontSize="18" Foreground="#fff" FontFamily="Garamond"/>
                         </Grid>
                     </Grid>
                 </ListBoxItem>
 
-                <ListBoxItem>
+                <ListBoxItem x:Name="item6">
                     <Grid>
 
                         <Border Style="{StaticResource imageBorder}"/>
                         <Image Source="Images/Bread.png" Width="100" Grid.Row="0" Grid.Column="1"/>
                         <Grid Margin="0,183,0,0" Grid.RowSpan="2">
                             <Border Style="{StaticResource productsPriceBorder}" Grid.Column="0"/>
-                            <TextBlock Text="Vape: 12,31$" TextAlignment="Center" VerticalAlignment="Center"  FontSize="18" Foreground="#fff" FontFamily="Garamond"/>
+                            <TextBlock  TextAlignment="Center" VerticalAlignment="Center"  FontSize="18" Foreground="#fff" FontFamily="Garamond"/>
                         </Grid>
                     </Grid>
                 </ListBoxItem>

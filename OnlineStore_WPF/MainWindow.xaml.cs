@@ -29,11 +29,8 @@ namespace OnlineStore_WPF
 
         private void basketButton_Click(object sender, RoutedEventArgs e)
         {
-            Window window = new Window();
-            window.Width = 300;
-            window.Height = 300;
-            window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
-            window.Show();
+           
+
         }
 
         private void exitButton_Click(object sender, RoutedEventArgs e)
@@ -41,10 +38,7 @@ namespace OnlineStore_WPF
             Close();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
+       
 
         private void searchButton_Click(object sender, RoutedEventArgs e)
         {
@@ -52,8 +46,66 @@ namespace OnlineStore_WPF
 
         }
 
+        private void itemListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            ListBox listBox = (ListBox)sender;
+            ListBoxItem selectedItem = listBox.SelectedItem as ListBoxItem;
+            if (selectedItem != null)
+            {
+                if (selectedItem == item1)
+                {
+
+                    Product selectedProduct = new Product();
+                    selectedProduct.Name = "Cola";
+                    selectedProduct.Price = 0.80m;
+
+                    MessageBox.Show($"Seçilen urun: {selectedProduct.Name}\nQiymet: {selectedProduct.Price} Manat");
+
+                }
+                else if (selectedItem == item2)
+                {
+                    Product selectedProduct = new Product();
+                    selectedProduct.Name = "Potato";
+                    selectedProduct.Price = 1.20m;
+                    MessageBox.Show($"Seçilen urun: {selectedProduct.Name}\nQiymet: {selectedProduct.Price} Manat");
 
 
+                }
+                else if (selectedItem == item3)
+                {
+                    Product selectedProduct = new Product();
+                    selectedProduct.Name = "Snickers";
+                    selectedProduct.Price = 0.90m;
+                    MessageBox.Show($"Seçilen urun: {selectedProduct.Name}\nQiymet: {selectedProduct.Price} Manat");
+
+                }
+                else if (selectedItem == item4)
+                {
+                    Product selectedProduct = new Product();
+                    selectedProduct.Name = "Pepsi";
+                    selectedProduct.Price = 0.85m;
+                    MessageBox.Show($"Seçilen urun: {selectedProduct.Name}\nQiymet: {selectedProduct.Price} Manat");
+
+                }
+                else if (selectedItem == item5)
+                {
+                    Product selectedProduct = new Product();
+                    selectedProduct.Name = "Vape";
+                    selectedProduct.Price = 12.31m;
+                    MessageBox.Show($"Seçilen urun: {selectedProduct.Name}\nQiymet: {selectedProduct.Price} Manat");
+
+                }
+                else if (selectedItem == item6)
+                {
+                    Product selectedProduct = new Product();
+                    selectedProduct.Name = "Bread";
+                    selectedProduct.Price = 0.65m;
+                    MessageBox.Show($"Seçilen urun: {selectedProduct.Name}\nQiymet: {selectedProduct.Price} Manat");
+
+                }
+
+            }
+        }
 
 
     }
