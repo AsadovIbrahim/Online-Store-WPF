@@ -30,7 +30,10 @@
                     </Grid>
                 </Border>
             </Grid>
-            <ListBox x:Name="itemListBox"  BorderBrush="Transparent" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Width="400" Background="Transparent" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionChanged="itemListBox_SelectionChanged">
+            <ListBox x:Name="itemListBox"  BorderBrush="Transparent" HorizontalAlignment="Center"
+                     VerticalAlignment="Center" Grid.Column="1" Width="400" Background="Transparent" 
+                     ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
+                     SelectionChanged="itemListBox_SelectionChanged">
                 <ListBox.ItemsPanel>
                     <ItemsPanelTemplate>
                         <WrapPanel Orientation="Horizontal"/>
@@ -48,7 +51,7 @@
                         <Image Source="Images/cola.png" Width="100" Height="100" Grid.Row="0" Grid.Column="1"/>
                         <Grid Margin="0,183,0,0" Grid.RowSpan="2">
                             <Border Style="{StaticResource productsPriceBorder}" Grid.Column="0"/>
-                            <TextBlock x:Name="itemName"  TextAlignment="Center" VerticalAlignment="Center"  FontSize="18" Foreground="#fff" FontFamily="Garamond"/>
+                            <TextBlock x:Name="itemName" Text="Cola"  TextAlignment="Center" VerticalAlignment="Center"  FontSize="18" Foreground="#fff" FontFamily="Garamond"/>
                         </Grid>
                     </Grid>
                 </ListBoxItem>
@@ -60,7 +63,7 @@
                         <Image Source="Images/Potato.png" Width="100" Grid.Row="0" Grid.Column="1"/>
                         <Grid Margin="0,183,0,0" Grid.RowSpan="2">
                             <Border Style="{StaticResource productsPriceBorder}" Grid.Column="0"/>
-                            <TextBlock TextAlignment="Center" VerticalAlignment="Center"  FontSize="18" Foreground="#fff" FontFamily="Garamond"/>
+                            <TextBlock TextAlignment="Center" Text="Potato" VerticalAlignment="Center"  FontSize="18" Foreground="#fff" FontFamily="Garamond"/>
                         </Grid>
                     </Grid>
                 </ListBoxItem>
@@ -71,7 +74,7 @@
                         <Image Source="Images/Snickers.png" Width="100" Grid.Row="0" Grid.Column="1"/>
                         <Grid Margin="0,183,0,0" Grid.RowSpan="2">
                             <Border Style="{StaticResource productsPriceBorder}" Grid.Column="0"/>
-                            <TextBlock  TextAlignment="Center" VerticalAlignment="Center"  FontSize="18" Foreground="#fff" FontFamily="Garamond"/>
+                            <TextBlock  TextAlignment="Center" Text="Snickers" VerticalAlignment="Center"  FontSize="18" Foreground="#fff" FontFamily="Garamond"/>
                         </Grid>
                     </Grid>
                 </ListBoxItem>
@@ -82,7 +85,7 @@
                         <Image Source="Images/Pepsi.png" Width="100" Grid.Row="0" Grid.Column="1"/>
                         <Grid Margin="0,183,0,0" Grid.RowSpan="2">
                             <Border Style="{StaticResource productsPriceBorder}" Grid.Column="0"/>
-                            <TextBlock  TextAlignment="Center" VerticalAlignment="Center"  FontSize="18" Foreground="#fff" FontFamily="Garamond"/>
+                            <TextBlock  TextAlignment="Center" Text="Pepsi" VerticalAlignment="Center"  FontSize="18" Foreground="#fff" FontFamily="Garamond"/>
                         </Grid>
                     </Grid>
                 </ListBoxItem>
@@ -93,7 +96,7 @@
                         <Image Source="Images/Vape.png" Width="100" Grid.Row="0" Grid.Column="1"/>
                         <Grid Margin="0,183,0,0" Grid.RowSpan="2">
                             <Border Style="{StaticResource productsPriceBorder}" Grid.Column="0"/>
-                            <TextBlock  TextAlignment="Center" VerticalAlignment="Center"  FontSize="18" Foreground="#fff" FontFamily="Garamond"/>
+                            <TextBlock  TextAlignment="Center" Text="Vape" VerticalAlignment="Center"  FontSize="18" Foreground="#fff" FontFamily="Garamond"/>
                         </Grid>
                     </Grid>
                 </ListBoxItem>
@@ -105,7 +108,7 @@
                         <Image Source="Images/Bread.png" Width="100" Grid.Row="0" Grid.Column="1"/>
                         <Grid Margin="0,183,0,0" Grid.RowSpan="2">
                             <Border Style="{StaticResource productsPriceBorder}" Grid.Column="0"/>
-                            <TextBlock  TextAlignment="Center" VerticalAlignment="Center"  FontSize="18" Foreground="#fff" FontFamily="Garamond"/>
+                            <TextBlock  TextAlignment="Center" Text="Bread" VerticalAlignment="Center"  FontSize="18" Foreground="#fff" FontFamily="Garamond"/>
                         </Grid>
                     </Grid>
                 </ListBoxItem>

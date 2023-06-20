@@ -12,8 +12,8 @@ namespace OnlineStore_WPF
     public class Product:INotifyPropertyChanged
     {
         private string name;
-        private decimal price;
         private string imagePath;
+        private decimal price;
 
         public string Name
         {
@@ -22,6 +22,15 @@ namespace OnlineStore_WPF
             {
                 name = value;
                 OnPropertyChanged("Name");
+            }
+        }
+        public string ImagePath
+        {
+            get { return imagePath; }
+            set
+            {
+                imagePath = value;
+                OnPropertyChanged($"{nameof(ImagePath)}");
             }
         }
         public decimal Price
@@ -34,15 +43,6 @@ namespace OnlineStore_WPF
             }
         }
 
-        public string ImagePath
-        {
-            get { return imagePath; }
-            set
-            {
-                imagePath = value;
-                OnPropertyChanged($"{nameof(ImagePath)}");
-            }
-        }
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected virtual void OnPropertyChanged(string propertyName)
