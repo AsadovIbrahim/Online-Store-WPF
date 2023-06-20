@@ -32,7 +32,6 @@ namespace OnlineStore_WPF
 
         private void basketButton_Click(object sender, RoutedEventArgs e)
         {
-            itemListBox.Items.Add(Name);
         }
 
         private void exitButton_Click(object sender, RoutedEventArgs e)
@@ -109,21 +108,8 @@ namespace OnlineStore_WPF
             }
         }
 
-        private void itemListBox_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
-        {
-            itemListBox.Items.Clear();
-        }
+        
 
-        private void item1_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
-        {
-            //if (sender is ListBoxItem listBoxItem)
-            //{
-            //    if (listBoxItem.DataContext is Product selectedProduct)
-            //    {
-            //        // Ürünü ObservableCollection'dan kaldırma
-            //        products.Remove(selectedProduct);
-            //    }
-            //}
-        }
+       
     }
 }
