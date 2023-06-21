@@ -39,15 +39,39 @@ namespace OnlineStore_WPF
             Close();
         }
 
-       
 
-        private void searchButton_Click(object sender, RoutedEventArgs e)
+        private void itemListBox_PreviewMouseRightButtonDown(object sender, MouseButtonEventArgs e)
         {
-          
-
+            if (e.RightButton == MouseButtonState.Pressed)
+            {
+                if (itemListBox.SelectedItem == item1)
+                {
+                    itemListBox.Items.Remove(item1);
+                }
+                else if(itemListBox.SelectedItem == item2)
+                {
+                    itemListBox.Items.Remove(item2);
+                }
+                else if (itemListBox.SelectedItem == item3)
+                {
+                    itemListBox.Items.Remove(item3);
+                }
+                else if (itemListBox.SelectedItem == item4)
+                {
+                    itemListBox.Items.Remove(item4);
+                }
+                else if (itemListBox.SelectedItem == item5)
+                {
+                    itemListBox.Items.Remove(item5);
+                }
+                else if (itemListBox.SelectedItem == item6)
+                {
+                    itemListBox.Items.Remove(item6);
+                }
+            }
         }
 
-        private void itemListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void itemListBox_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             ListBox listBox = (ListBox)sender;
             ListBoxItem selectedItem = listBox.SelectedItem as ListBoxItem;
@@ -103,13 +127,17 @@ namespace OnlineStore_WPF
                     selectedProduct.Price = 0.65m;
                     MessageBox.Show($"Seçilen urun: {selectedProduct.Name}\nQiymet: {selectedProduct.Price} Manat");
 
+            
+
                 }
+         
+
+            
 
             }
+
+
         }
-
-        
-
-       
     }
 }
+

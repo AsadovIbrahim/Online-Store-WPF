@@ -30,10 +30,10 @@
                     </Grid>
                 </Border>
             </Grid>
-            <ListBox x:Name="itemListBox"  BorderBrush="Transparent" HorizontalAlignment="Center"
+            <ListBox x:Name="itemListBox" PreviewMouseRightButtonDown="itemListBox_PreviewMouseRightButtonDown"  BorderBrush="Transparent" HorizontalAlignment="Center"
                      VerticalAlignment="Center" Grid.Column="1" Width="400" Background="Transparent" 
                      ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
-                     SelectionChanged="itemListBox_SelectionChanged">
+                     PreviewMouseLeftButtonDown="itemListBox_PreviewMouseLeftButtonDown">
                 <ListBox.ItemsPanel>
                     <ItemsPanelTemplate>
                         <WrapPanel Orientation="Horizontal"/>
